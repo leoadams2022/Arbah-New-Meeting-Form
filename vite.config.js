@@ -14,9 +14,9 @@ export default defineConfig({
       registerType: "autoUpdate",
       includeAssets: ["favicon.svg", "robots.txt", "apple-touch-icon.png"],
       manifest: {
-        name: "Arbah New Leads Form",
-        short_name: "Arbah Leads",
-        description: "Arbah New Leads Form Progressive Web App",
+        name: "Arbah Meeting Notes",
+        short_name: "Arbah Meeting Notes",
+        description: "Arbah Meeting Notes Progressive Web App",
         theme_color: "#ffffff",
         background_color: "#ffffff",
         display: "standalone",
