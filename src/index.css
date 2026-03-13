@@ -1,0 +1,70 @@
+@import "tailwindcss";
+@import "flowbite-react/plugin/tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+
+@source "../.flowbite-react/class-list.json";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@plugin "@tailwindcss/typography";
+
+* {
+  font-family: "Cairo", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+.bg {
+  @apply bg-slate-100 dark:bg-slate-800;
+}
+.bg-pop {
+  @apply bg-slate-300 dark:bg-slate-900;
+}
+.hover-bg-pop:hover {
+  @apply bg-slate-300/50 dark:bg-slate-900/50;
+}
+.text {
+  @apply text-slate-800 dark:text-slate-300;
+}
+.text-pop {
+  @apply text-black dark:text-white;
+}
+.text-dem {
+  @apply text-slate-600 dark:text-slate-400;
+}
+
+.required:after {
+  content: " *";
+  @apply text-red-600;
+}
+
+/* (root container) */
+.rsw-editor {
+}
+
+/* (editable area) */
+.rsw-ce {
+}
+
+/*  */
+.rsw-toolbar {
+  @apply !bg-slate-300 dark:!bg-slate-900;
+}
+
+/*  */
+.rsw-btn {
+  @apply !text-black dark:!text-white;
+}
+.rsw-btn:hover {
+  @apply !bg-slate-100 dark:!bg-slate-800;
+}
+.rsw-btn[data-active="true"] {
+  @apply !bg-slate-500 dark:!bg-slate-700;
+}
+/*  */
+.rsw-separator {
+}
+
+/* (drop down list) */
+.rsw-dd {
+}
